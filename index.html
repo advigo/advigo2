@@ -108,6 +108,115 @@
   </footer>
 
   <!-- AI Chatbot -->
-  <script src="https://digital-helper-bubble.lovable.app/widget.js" data-chatbot-id="89709801-d86a-4bb1-9119-cc4b8432fe5e"></script>
+  <div id="chat-bubble">
+    <div id="chat-window">
+      <iframe src="https://digital-helper-bubble.lovable.app/embed" frameborder="0"></iframe>
+    </div>
+    <button id="chat-toggle" aria-label="Öppna chatt">
+      <span class="chat-icon">💬</span>
+      <span class="close-icon">&times;</span>
+    </button>
+  </div>
+
+  <style>
+    #chat-bubble {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    #chat-window {
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      width: 350px;
+      height: 500px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px) scale(0.95);
+      transition: all 0.3s ease;
+    }
+
+    #chat-window.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+
+    #chat-window iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    #chat-toggle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #chat-toggle:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 30px rgba(59, 130, 246, 0.5);
+    }
+
+    #chat-toggle .close-icon {
+      display: none;
+      font-size: 28px;
+    }
+
+    #chat-toggle.active .chat-icon {
+      display: none;
+    }
+
+    #chat-toggle.active .close-icon {
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      #chat-window {
+        width: calc(100vw - 40px);
+        height: 60vh;
+        right: 0;
+      }
+    }
+  </style>
+
+  <script>
+    (function() {
+      const toggle = document.getElementById('chat-toggle');
+      const window = document.getElementById('chat-window');
+
+      toggle.addEventListener('click', function() {
+        const isActive = window.classList.toggle('active');
+        toggle.classList.toggle('active');
+        toggle.setAttribute('aria-label', isActive ? 'Stäng chatt' : 'Öppna chatt');
+      });
+
+      // Close on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && window.classList.contains('active')) {
+          window.classList.remove('active');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-label', 'Öppna chatt');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
