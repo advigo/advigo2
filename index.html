@@ -170,7 +170,7 @@
                     <h2 class="section-title">Redo att effektivisera?</h2>
                     <p>Boka en 15-minuters demo så visar vi hur våra appar kan spara er tid och pengar från dag ett.</p>
                     <ul class="contact-details">
-                        <li>info@advigo.se</li>
+                        <li><span class="email-protected" data-user="ofni" data-domain="es.ogivda"></span></li>
                         <li>Örebro, Sverige</li>
                     </ul>
                 </div>
@@ -261,6 +261,14 @@
         });
 
         startAutoplay();
+
+        // --- EMAIL PROTECTION ---
+        document.querySelectorAll('.email-protected').forEach(el => {
+            const user = el.dataset.user.split('').reverse().join('');
+            const domain = el.dataset.domain.split('').reverse().join('');
+            const email = user + '@' + domain;
+            el.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+        });
     </script>
     <script src="https://digital-helper-bubble.lovable.app/widget.js" data-chatbot-id="89709801-d86a-4bb1-9119-cc4b8432fe5e"></script>
 </body>
