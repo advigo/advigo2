@@ -1,113 +1,262 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advigo - Apptillverkning</title>
-  <link rel="stylesheet" href="src/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVIGO — AI-drivna appar som förenklar din vardag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <a href="#" class="logo">Advigo</a> 
-      <nav>
-        <ul>
-          <li><a href="#services">Tjänster</a></li>
-          <li><a href="#why-us">Varför välja oss</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-    <div class="container">
-        <div class="hero-content">
-        <h1>Utveckling av appar som skapar mervärde</h1>
-        <p>Vårt fokus ligger på kvalitet, innovation och affärsvärde – oavsett om du är en entreprenör med en idé eller ett etablerat företag som vill digitalisera en process.</p>
-        <a href="#contact" class="cta-button">Kontakta oss</a>
+    <!-- INTRO SKÄRM -->
+    <div id="intro">
+        <div id="mouse-glow"></div>
+        <div class="intro-content-wrapper">
+            <div class="intro-content">
+                <div class="logo">
+                    <span class="logo-mark">_</span>
+                    <span class="logo-name">ADVIGO</span>
+                </div>
+                <p class="intro-sub">
+                    <span class="prompt">$</span> ai.apps --target=business --mode=simplify
+                    <span class="cursor">█</span>
+                </p>
+            </div>
         </div>
     </div>
-    </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2>Tjänster</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3>🌱 Koncept & Strategi</h3>
-          <p>Vi hjälper dig att definiera din appidé, kartlägga krav och bygga en teknisk strategi som matchar dina mål.</p>
-        </div>
-        <div class="service-card">
-          <h3>📱 Apputveckling (iOS & Android)</h3>
-          <p>Från enkla interna verktyg till komplexa konsumentappar – vi bygger appar med modern teknik och säker arkitektur.</p>
-        </div>
-        <div class="service-card">
-          <h3>🎨 Gränssnittsdesign</h3>
-          <p>En app måste vara intuitiv och visuellt attraktiv. Vi skapar gränssnitt som ger en smidig användarupplevelse.</p>
-        </div>
-        <div class="service-card">
-          <h3>⚙️ Backend & Integrationer</h3>
-          <p>Vi bygger robusta system som kan växa med din verksamhet – med integration mot databaser, API:er och molntjänster.</p>
-        </div>
-        <div class="service-card">
-          <h3>✅ Testning & Lansering</h3>
-          <p>Innan appen släpps hos Apple App Store eller Google Play kontrollerar vi allt – från prestanda till säkerhet.</p>
-        </div>
-        <div class="service-card">
-          <h3>🔁 Drift & Underhåll</h3>
-          <p>Efter lansering erbjuder vi kontinuerlig support, uppdateringar och optimering så att din app levererar värde över tid.</p>
-        </div>
-      </div>
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+        
+        <nav>
+            <div class="nav-logo">
+                <span class="logo-mark">_</span>
+                <span class="logo-name">ADVIGO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#appar">Våra appar</a></li>
+                <li><a href="#ai">AI-lösningar</a></li>
+                <li><a href="#kontakt" class="nav-cta">Boka demo</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <header class="hero">
+            <div class="hero-top">
+                <h1>AI-drivna verktyg som <br><span class="text-accent">förenklar din företagardag.</span></h1>
+                <p class="hero-desc">Sluta spendera tid på administration. Låt våra smarta appar sköta fakturering, bokföring och kundtjänst – så att du kan fokusera på att växa.</p>
+            </div>
+
+            <!-- SLIDER -->
+            <div class="hero-slider">
+                <div class="hero-slider-track">
+                    <!-- Slide 1: Fakturering/Ekonomi -->
+                    <div class="hero-slide slide-1">
+                        <div class="slide-bg"></div>
+                        <div class="slide-content">
+                            <h2>Automatisk fakturering & bokföring</h2>
+                            <p>Skicka fakturor på sekunder och låt AI:n sköta bokföringen. Allt integrerat och alltid uppdaterat.</p>
+                            <a href="https://fakturex.se" target="_blank" class="slide-btn-action">Utforska Fakturex</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Tid -->
+                    <div class="hero-slide slide-2">
+                        <div class="slide-bg"></div>
+                        <div class="slide-content">
+                            <h2>Smart tidsredovisning</h2>
+                            <p>Spåra tid automatiskt och koppla direkt till lönesystem och fakturering. Inga mer manuella tidrapporter.</p>
+                            <a href="https://fakturex.se" target="_blank" class="slide-btn-action">Se hur det fungerar</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3: AI Kundtjänst -->
+                    <div class="hero-slide slide-3">
+                        <div class="slide-bg"></div>
+                        <div class="slide-content">
+                            <h2>Din nya AI-kundtjänst</h2>
+                            <p>Vår senaste produkt hanterar ärenden på hemsidan, via mail och telefon dygnet runt. Upplevd som en riktig människa.</p>
+                            <a href="https://tralira.com" target="_blank" class="slide-btn-action">Läs mer om Tralira</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow prev">&#8249;</button>
+                    <button class="slider-arrow next">&#8250;</button>
+                </div>
+                <div class="slider-dots">
+                    <button class="dot active" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                    <button class="dot" data-index="2"></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- VÅRA APPAR -->
+        <section id="appar" class="section section-alt">
+            <div class="container">
+                <p class="section-label">Våra plattformar</p>
+                <h2 class="section-title">Verktygen som bygger ditt företag</h2>
+                <div class="apps-grid">
+                    
+                    <!-- App 1: Fakturex -->
+                    <a href="https://fakturex.se" target="_blank" class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <span class="app-tag">Ekonomi</span>
+                        <h3>Fakturex</h3>
+                        <p>Smart fakturering och löpande bokföring som håller sig själv uppdaterad.</p>
+                    </a>
+
+                    <!-- App 2: Tidredovisning -->
+                    <a href="https://fakturex.se" target="_blank" class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <span class="app-tag">Produktivitet</span>
+                        <h3>Tidredovisning</h3>
+                        <p>AI-driven tidsredovisning som förstår vad du gör och loggar det automatiskt.</p>
+                    </a>
+
+                    <!-- App 3: Bokföring -->
+                    <a href="https://fakturex.se" target="_blank" class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <span class="app-tag">Redovisning</span>
+                        <h3>Bokföring</h3>
+                        <p>Hela bokföringen i din ficka. Klickvänliga gränssnitt för icke-ekonomer.</p>
+                    </a>
+
+                    <!-- App 4: Tralira -->
+                    <a href="https://tralira.com" target="_blank" class="app-card">
+                        <div class="app-icon" style="background: #eff6ff;">
+                            <svg viewBox="0 0 24 24" style="stroke: #2563eb;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path></svg>
+                        </div>
+                        <span class="app-tag" style="color: #2563eb; background: #eff6ff;">Nyhet</span>
+                        <h3>Tralira</h3>
+                        <p>Din AI-kundtjänst. Hanterar hemsida, mail och telefon dygnet runt.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AI FOKUS -->
+        <section id="ai" class="section">
+            <div class="container features-grid">
+                <div class="feature-text">
+                    <p class="section-label" style="text-align: left;">Varför AI?</p>
+                    <h2 class="section-title" style="text-align: left;">Teknik som jobbar när du sover</h2>
+                    <p>Våra appar är inte bara digitala blanketter. De är tränade på hundratusentals företagsflöden. De lär sig dina mönster, föreslår åtgärder och tar hand om repetitiva uppgifter så att du kan fokusera på din kärnverksamhet.</p>
+                    <p>Med ADVIGO växer er kapacitet i takt med företaget. Våra AI-verktyg avlastar teamet från repetitiva uppgifter så att ni kan fokusera på det ni är bäst på – utan att behöva bygga en stor administrativ organisation.</p>
+                    <a href="#kontakt" class="btn btn-primary">Prata med en AI-specialist</a>
+                </div>
+                <div class="feature-visual">
+                    <a href="https://tralira.com" target="_blank">
+                        <img src="/img/Your AI customer service.png" alt="Tralira - Your AI customer service" style="max-width: 100%; border-radius: 8px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="kontakt" class="section section-dark">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">Kom igång</p>
+                    <h2 class="section-title">Redo att effektivisera?</h2>
+                    <p>Boka en 15-minuters demo så visar vi hur våra appar kan spara er tid och pengar från dag ett.</p>
+                    <ul class="contact-details">
+                        <li>info@advigo.se</li>
+                        <li>Örebro, Sverige</li>
+                    </ul>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Tack! Vi hör av oss.'; this.querySelector('button').style.background = 'white';">
+                    <input type="text" placeholder="Ditt namn" required>
+                    <input type="email" placeholder="Din e-post" required>
+                    <textarea placeholder="Vilken app är du mest intresserad av?" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">Boka demo</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <span class="footer-logo"><span class="logo-mark">_</span>ADVIGO</span>
+                <span class="footer-copy">&copy; 2025 ADVIGO. Alla rättigheter reserverade.</span>
+            </div>
+        </footer>
     </div>
-  </section>
 
-  <!-- Why Us Section -->
-  <section id="why-us">
-    <div class="container">
-      <h2>Varför välja Advigo?</h2>
-      <div class="reasons-grid">
-        <div class="reason-card">
-          <h3>Modern teknik & bästa praxis</h3>
-        </div>
-        <div class="reason-card">
-          <h3>Transparent och agil process</h3>
-        </div>
-        <div class="reason-card">
-          <h3>Fokus på affärsvärde och användarupplevelse</h3>
-        </div>
-        <div class="reason-card">
-          <h3>Flexibel hantering – kort eller långsiktig partner</h3>
-        </div>
-        <div class="reason-card">
-          <h3>Lokalt konsultteam med bred erfarenhet</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- SCRIPTS -->
+    <script>
+        // --- INTRO LOGIC ---
+        const intro = document.getElementById('intro');
+        const mainContent = document.getElementById('main-content');
+        const mouseGlow = document.getElementById('mouse-glow');
+        const introWrapper = document.querySelector('.intro-content-wrapper');
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Börja bygga idag</h2>
-      <p>Har du en idé du vill förverkliga, eller behöver du stöd med en befintlig produkt?</p>
-      <a href="mailto:info@advigo.se" class="cta-button">Skicka offertförfrågan</a>
-    </div>
-  </section>
+        intro.addEventListener('mousemove', (e) => {
+            mouseGlow.style.left = e.clientX + 'px';
+            mouseGlow.style.top = e.clientY + 'px';
+            mouseGlow.style.opacity = '1';
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Advigo. Alla rättigheter reserverade.</p>
-    </div>
-  </footer>
+            const rect = intro.getBoundingClientRect();
+            const offsetX = (e.clientX - rect.width / 2) / rect.width;
+            const offsetY = (e.clientY - rect.height / 2) / rect.height;
+            introWrapper.style.transform = `translate(${offsetX * 20}px, ${offsetY * 20}px)`;
+        });
 
-  <!-- AI Chatbot -->
-  <script src="https://digital-helper-bubble.lovable.app/widget.js" data-chatbot-id="89709801-d86a-4bb1-9119-cc4b8432fe5e"></script>
+        intro.addEventListener('mouseleave', () => {
+            mouseGlow.style.opacity = '0';
+            introWrapper.style.transform = 'translate(0px, 0px)';
+        });
+
+        intro.addEventListener('click', () => {
+            intro.classList.add('hidden');
+            setTimeout(() => {
+                intro.style.display = 'none';
+                mainContent.classList.add('visible');
+            }, 800);
+        });
+
+        // --- SLIDER LOGIC ---
+        const track = document.querySelector('.hero-slider-track');
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function goToSlide(index) {
+            currentSlide = index;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+        }
+
+        function nextSlide() { goToSlide((currentSlide + 1) % slides.length); }
+        function prevSlide() { goToSlide((currentSlide - 1 + slides.length) % slides.length); }
+
+        function startAutoplay() { slideInterval = setInterval(nextSlide, 5000); }
+        function stopAutoplay() { clearInterval(slideInterval); }
+
+        nextBtn.addEventListener('click', () => { stopAutoplay(); nextSlide(); startAutoplay(); });
+        prevBtn.addEventListener('click', () => { stopAutoplay(); prevSlide(); startAutoplay(); });
+        
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                stopAutoplay();
+                goToSlide(parseInt(e.target.dataset.index));
+                startAutoplay();
+            });
+        });
+
+        startAutoplay();
+    </script>
+    <script src="https://digital-helper-bubble.lovable.app/widget.js" data-chatbot-id="89709801-d86a-4bb1-9119-cc4b8432fe5e"></script>
 </body>
 </html>
