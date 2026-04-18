@@ -174,10 +174,12 @@
                         <li>Örebro, Sverige</li>
                     </ul>
                 </div>
-                <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Tack! Vi hör av oss.'; this.querySelector('button').style.background = 'white';">
-                    <input type="text" placeholder="Ditt namn" required>
-                    <input type="email" placeholder="Din e-post" required>
-                    <textarea placeholder="Vilken app är du mest intresserad av?" rows="4" required></textarea>
+                <form class="contact-form" action="https://formsubmit.co/info@advigo.se" method="POST">
+                    <input type="text" name="name" placeholder="Ditt namn" required>
+                    <input type="email" name="email" placeholder="Din e-post" required>
+                    <textarea name="message" placeholder="Vilken app är du mest intresserad av?" rows="4" required></textarea>
+                    <input type="hidden" name="_subject" value="Ny demo-förfrågan från ADVIGO webbplats">
+                    <input type="hidden" name="_next" value="https://advigo.se/tack.html">
                     <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">Boka demo</button>
                 </form>
             </div>
