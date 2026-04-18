@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tack för din förfrågan — ADVIGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+        }
+        .thank-you-content {
+            max-width: 600px;
+        }
+        .thank-you-content .logo {
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        .thank-you-content h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        .thank-you-content h1 span {
+            color: #4ecdc4;
+        }
+        .thank-you-content p {
+            font-size: 1.25rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .thank-you-content .btn {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-content">
+            <div class="logo">
+                <span class="logo-mark">_</span>
+                <span class="logo-name">ADVIGO</span>
+            </div>
+            <h1>Tack för din <span>förfrågan!</span></h1>
+            <p>Vi har mottagit ditt meddelande och återkommer till dig inom 24 timmar för att boka in en demo.</p>
+            <a href="/" class="btn btn-primary">Tillbaka till startsidan</a>
+        </div>
+    </div>
+</body>
+</html>
